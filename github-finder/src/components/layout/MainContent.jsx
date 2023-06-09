@@ -4,9 +4,7 @@ import { useState } from 'react'
 
 
 
-
 function MainContent() {
-
 
     const [query, setQuery] = useState("re")
 
@@ -19,7 +17,6 @@ function MainContent() {
             console.log(val);
         }
     };
-
     
     return (
 
