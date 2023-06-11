@@ -3,20 +3,21 @@ import React from 'react'
 function UserDetails({ repos }) {
 
   return (
-    <div>
-      {repos.length > 0 ? (
-       <div className="overflow-x-auto">
-          <table className="table table-zebra w-full">
-            {/* head */}
-            <thead>
-              <tr>
-                <th></th>
-                <th>Name</th>
-                <th>Description</th>
-              </tr>
-            </thead>
-            <tbody>
-
+  <div>
+    {repos.length > 0 ? (
+      <div className="overflow-x-auto">
+        
+       <table className="table table-zebra w-full">
+          {/* head */}
+           <thead>
+             <tr>
+              <th></th>
+              <th>Name</th>
+              <th>Description</th>
+             </tr>
+          </thead>
+         <tbody>
+    
               {repos.map((repo, index) => (
                 <tr key={repo.id}>
                   <th>{index + 1}</th>
@@ -24,6 +25,7 @@ function UserDetails({ repos }) {
                   <td>{repo.description}</td>
                 </tr>
               ))}
+
             </tbody>
           </table>
         </div>
